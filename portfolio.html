@@ -4,66 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        td {
-            border: 1px solid #ddd;
-            padding: 20px;
-            vertical-align: top;
-        }
-        .header {
-            text-align: center;
-            background-color: #4CAF50;
-            color: white;
-        }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }
-        .bio {
-            text-align: center;
-        }
-        .skills, .footer {
-            background-color: #f4f4f4;
-        }
-        .footer {
-            text-align: center;
-            padding: 10px;
-            color: #333;
-        }
-    </style>
 </head>
 <body>
 
-<table>
+<table style="width: 100%; border-collapse: collapse;">
     <!-- Header Row -->
     <tr>
-        <td colspan="2" class="header">
-            <h1>John Doe</h1>
-            <p>Web Developer | Designer</p>
+        <td colspan="2" style="background-color: #4CAF50; color: white; text-align: center; padding: 20px;">
+            <h1 style="margin: 0;">John Doe</h1>
+            <p style="margin: 5px 0;">Web Developer | Designer</p>
         </td>
     </tr>
 
     <!-- Profile Picture and Bio Row -->
     <tr>
-        <td style="width: 30%; text-align: center;">
-            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+        <td style="width: 30%; text-align: center; padding: 20px;">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%; border: 5px solid #2ecc71;">
         </td>
-        <td class="bio">
-            <h2>About Me</h2>
+        <td style="padding: 20px; text-align: center;">
+            <h2 style="color: #4CAF50;">About Me</h2>
             <p>Hello! I'm John, a passionate web developer with experience in building responsive websites. I enjoy turning complex problems into simple, beautiful designs.</p>
         </td>
     </tr>
 
     <!-- Skills Section -->
     <tr>
-        <td colspan="2" class="skills">
-            <h2 style="text-align: center;">Skills</h2>
-            <ul>
+        <td colspan="2" style="padding: 20px; background-color: #f4f4f4;">
+            <h2 style="text-align: center; color: #4CAF50;">Skills</h2>
+            <ul style="list-style: none; padding-left: 0; text-align: center;">
                 <li>HTML & CSS</li>
                 <li>JavaScript</li>
                 <li>React.js</li>
@@ -75,8 +43,8 @@
 
     <!-- Footer Row -->
     <tr>
-        <td colspan="2" class="footer">
-            <p>&copy; 2024 John Doe | <a href="mailto:john@example.com">Contact Me</a></p>
+        <td colspan="2" style="background-color: #4CAF50; color: white; text-align: center; padding: 10px;">
+            <p>&copy; 2024 John Doe | <a href="mailto:john@example.com" style="color: white;">Contact Me</a></p>
         </td>
     </tr>
 </table>
