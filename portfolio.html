@@ -3,73 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Name - chulde</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Profile Page</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 20px;
+            vertical-align: top;
+        }
+        .header {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .bio {
+            text-align: center;
+        }
+        .skills, .footer {
+            background-color: #f4f4f4;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">chulde</div>
+<table>
+    <!-- Header Row -->
+    <tr>
+        <td colspan="2" class="header">
+            <h1>John Doe</h1>
+            <p>Web Developer | Designer</p>
+        </td>
+    </tr>
+
+    <!-- Profile Picture and Bio Row -->
+    <tr>
+        <td style="width: 30%; text-align: center;">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+        </td>
+        <td class="bio">
+            <h2>About Me</h2>
+            <p>Hello! I'm John, a passionate web developer with experience in building responsive websites. I enjoy turning complex problems into simple, beautiful designs.</p>
+        </td>
+    </tr>
+
+    <!-- Skills Section -->
+    <tr>
+        <td colspan="2" class="skills">
+            <h2 style="text-align: center;">Skills</h2>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>UI/UX Design</li>
             </ul>
-        </nav>
-    </header>
+        </td>
+    </tr>
 
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <h1>chulde</h1>
-            <p>Explore some of the projects I've worked on.</p>
-        </div>
-    </section>
-
-    <section id="about" class="about-section">
-    <h2>About Me</h2>
-    
-    <!-- Adding your profile picture -->
-    <div class="profile-container">
-        <img src="chuldeprofile1.jfif" alt="Your Name Profile Picture" class="profile-img">
-    </div>
-
-    <p>Write a short bio here about your professional journey, background, and interests.</p>
-    </section>
-
-    <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-        
-        <div class="project-card">
-            <h3>Project 1: [Title]</h3>
-            <p>Brief description of Project 1. You can write a more detailed overview of the project here and link to it, if applicable.</p>
-            <a href="#" class="project-link">View Project</a>
-        </div>
-
-        <div class="project-card">
-            <h3>Project 2: [Title]</h3>
-            <p>Brief description of Project 2. Talk about the technologies you used, what the project involved, and what you learned.</p>
-            <a href="#" class="project-link">View Project</a>
-        </div>
-
-        <div class="project-card">
-            <h3>Project 3: [Title]</h3>
-            <p>Brief description of Project 3. Showcase its features, functionality, and any relevant links to the work.</p>
-            <a href="#" class="project-link">View Project</a>
-        </div>
-
-    </section>
-
-    <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
-    </footer>
+    <!-- Footer Row -->
+    <tr>
+        <td colspan="2" class="footer">
+            <p>&copy; 2024 John Doe | <a href="mailto:john@example.com">Contact Me</a></p>
+        </td>
+    </tr>
+</table>
 
 </body>
 </html>
